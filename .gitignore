@@ -1,0 +1,8 @@
+.env
+secrets/
+state/
+logs/
+__pycache__/
+*.pyc
+.venv/
+venv/

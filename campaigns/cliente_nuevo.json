@@ -1,0 +1,38 @@
+{
+  "campaign_id": "REEMPLAZAR-id-de-campana",
+  "client_name": "REEMPLAZAR nombre del cliente",
+  "spreadsheet_id": "REEMPLAZAR_ID_DEL_SPREADSHEET",
+  "sheets": {
+    "leads": "Leads",
+    "interactions": "Interacciones",
+    "signals": "Señales"
+  },
+  "id_prefixes": { "lead": "cli", "interaction": "int", "signal": "sig" },
+  "limits": {
+    "daily_connections": 20,
+    "daily_messages": 20,
+    "daily_profile_views": 100,
+    "bulk_confirm_threshold": 10
+  },
+  "icp_segments": ["REEMPLAZAR segmento 1", "REEMPLAZAR segmento 2"],
+  "icp_file": "REEMPLAZAR ruta al ICP del cliente (ver README: el ICP NO se reutiliza entre clientes)",
+  "prompts_dir": "prompts/",
+  "followup_days": { "greeting_after_accept": 2, "follow_up_1": 7, "breakup": 14, "min_business_days_between_messages": 2 },
+  "enrichment": {
+    "snov_enabled": false,
+    "apify_enabled": false,
+    "apify_actor": "dev_fusion~linkedin-profile-scraper",
+    "clay_enabled": false,
+    "clay_keywords": []
+  },
+  "scoring": {
+    "weights": { "fit": 40, "intent": 35, "urgency": 25 },
+    "tier_fit": { "Tier 1": 1.0, "Tier 2": 0.7, "Tier 3": 0.4 },
+    "sector_fit_bonus": [],
+    "sector_bonus_value": 0.1,
+    "signal_value": 0.15,
+    "trigger_value": 0.25,
+    "urgency_per_trigger": 0.3,
+    "handoff_min_score": null
+  }
+}

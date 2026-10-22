@@ -1,0 +1,5 @@
+# Python >= 3.10
+gspread>=6.0,<7
+google-auth>=2.0
+requests>=2.31
+filelock>=3.12

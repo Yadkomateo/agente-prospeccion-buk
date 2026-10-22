@@ -1,0 +1,1 @@
+Hola {name}, sé que el día a día no da tregua. Quedé pensando en lo de {topic} que te comentaba. ¿Alcanzaste a verlo o prefieres que retomemos más adelante?

@@ -1,0 +1,1 @@
+Hola {name}, no quiero llenarte el inbox sin necesidad. Si {topic} no es prioridad ahora mismo, lo entiendo perfecto — cierro el loop por acá. Si en algún momento cambia, me escribes sin pena, aquí ando.

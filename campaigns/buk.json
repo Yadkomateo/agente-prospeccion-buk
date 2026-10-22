@@ -1,0 +1,39 @@
+{
+  "campaign_id": "buk-latam",
+  "client_name": "Buk",
+  "spreadsheet_id": "17zk9R-5b4lvwqBp8ZP7uQWgcW_cYfh7an53C1ymNdIM",
+  "sheets": {
+    "leads": "Buk Leads",
+    "interactions": "Buk Interacciones",
+    "signals": "Señales"
+  },
+  "id_prefixes": { "lead": "buk", "interaction": "int", "signal": "sig" },
+  "limits": {
+    "daily_connections": 40,
+    "daily_messages": 30,
+    "daily_profile_views": 200,
+    "bulk_confirm_threshold": 10
+  },
+  "icp_segments": ["Nomina", "Talento", "TI", "CHRO", "CFO", "CEO"],
+  "icp_file": ".agents/skills/buk-prospecting/references/ICP.md",
+  "prompts_dir": "prompts/",
+  "followup_days": { "greeting_after_accept": 2, "follow_up_1": 7, "breakup": 14, "min_business_days_between_messages": 2 },
+  "enrichment": {
+    "snov_enabled": true,
+    "apify_enabled": true,
+    "apify_actor": "dev_fusion~linkedin-profile-scraper",
+    "clay_enabled": false,
+    "clay_keywords": ["nómina", "payroll", "recursos humanos", "gestión humana", "UGPP", "HRIS"]
+  },
+  "scoring": {
+    "_note": "Pesos heredados del script original (fit 40 / intent 35 / urgency 25). NO calibrados con datos reales de conversión. 'sector_fit_bonus' y 'handoff_min_score' estaban sin definir en el skill original (lead-scoring.md vacío).",
+    "weights": { "fit": 40, "intent": 35, "urgency": 25 },
+    "tier_fit": { "Tier 1": 1.0, "Tier 2": 0.7, "Tier 3": 0.4 },
+    "sector_fit_bonus": [],
+    "sector_bonus_value": 0.1,
+    "signal_value": 0.15,
+    "trigger_value": 0.25,
+    "urgency_per_trigger": 0.3,
+    "handoff_min_score": null
+  }
+}

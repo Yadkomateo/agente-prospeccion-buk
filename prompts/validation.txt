@@ -1,0 +1,1 @@
+Hola {name}, vi que {company} {trigger}. Me preguntaba, ¿cómo están manejando hoy el frente de {topic}?
